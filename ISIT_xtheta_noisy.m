@@ -20,6 +20,7 @@ thval4=linspace(mut+sigma_thsq,mut+2*sigma_thsq,2);
 thval5=linspace(mut+2*sigma_thsq,bt,1);
 thval=[thval1(2:end) thval2(2:end) thval3(2:end) thval4(2:end) thval5(2:end-1)];
 thval=[thval1 thval2(2:end) thval3(2:end) thval4(2:end) thval5(2:end-1)];
+thval=thval';
 nt=length(thval);
 % pdf of theta
 pth=zeros(1,length(thval));
